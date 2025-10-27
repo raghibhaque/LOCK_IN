@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lock_In ⏳</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>LOCK_IN</h1>
+    <div class="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="settings">
+      <label for="timeInput">Set minutes: </label>
+      <input type="number" id="timeInput" min="1" max="60" value="60">
+      <button id="setTimeBtn">Set</button>
+    </div>
+
+    <p id="status" class="status">Ready to focus!</p>
+  </div>
+
+  <div class="widget">
+    <div class="widget-header">⚙️</div>
+    <div class="widget-content">
+      <p><strong>System Time:</strong> <span id="systemTime">00:00:00</span></p>
+      <p><strong>Background Color:</strong></p>
+      <input type="color" id="colorPicker1" value="#141E30">
+      <input type="color" id="colorPicker2" value="#243B55">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
